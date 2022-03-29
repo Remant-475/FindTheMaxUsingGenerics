@@ -11,6 +11,10 @@ namespace FindTheMaximum
             Console.WriteLine("-------------------------");
             MaxFloat maxfloat = new MaxFloat();
             Console.WriteLine(maxfloat.FloatNumber(80.8f, 44.6f, 60.1f));
+            Console.WriteLine("-------------------------");
+
+            MaxString maxString = new MaxString();
+            Console.WriteLine(maxString.largeString("Apple", "Peach", "Banana"));
         }
     }
 }

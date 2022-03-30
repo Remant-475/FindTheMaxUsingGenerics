@@ -10,7 +10,7 @@ namespace FindTheMaximum
     {
         public string largeString(string Str_1, string Str_2, string Str_3)
         {
-            Console.WriteLine("Three Strings are String1 = " + Str_1 + "String2 =" + Str_2 + "String3 = " + Str_3);
+            Console.WriteLine("Three Strings are String1 = " + Str_1 + " String2 = " + Str_2 + " String3 = " + Str_3);
             if (Str_1.CompareTo(Str_2) > 0 && Str_1.CompareTo(Str_3) > 0)
             {
                 Console.Write("Max String = ");

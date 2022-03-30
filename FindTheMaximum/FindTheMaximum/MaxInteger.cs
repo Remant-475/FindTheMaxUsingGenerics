@@ -10,7 +10,7 @@ namespace FindTheMaximum
     {
         public int NumberMax(int Num_1, int Num_2, int Num_3)
         {
-            Console.WriteLine("Three numbers are Numer1 = " +Num_1 +"Number2 =" +Num_2+ "Number3 = " +Num_3);
+            Console.WriteLine("Three numbers are Numer1 = " +Num_1 +" Number2 = " +Num_2+ " Number3 = " +Num_3);
 
             if (Num_1.CompareTo(Num_2) > 0 && Num_1.CompareTo(Num_3) > 0)
             {

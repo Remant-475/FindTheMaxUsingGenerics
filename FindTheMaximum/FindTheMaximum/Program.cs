@@ -1,20 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace FindTheMaximum
+    namespace FindTheMaximum
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
-            MaxInteger MaxNum = new MaxInteger();
-            Console.WriteLine(MaxNum.NumberMax(30, 50, 40));
-            Console.WriteLine("-------------------------");
-            MaxFloat maxfloat = new MaxFloat();
-            Console.WriteLine(maxfloat.FloatNumber(80.8f, 44.6f, 60.1f));
-            Console.WriteLine("-------------------------");
+            int[] intArray = { 25, 75, 26, 88, 196, 111, 18, };
+            float[] floatArray = { 95.5f, 75.46f, 46.32f, 25.95f, 111.21f };
+            string[] stringArray = { "Apple", "Peach", "Banana", "Remant", "Vivek", "Aman" };
 
-            MaxString maxString = new MaxString();
-            Console.WriteLine(maxString.largeString("Apple", "Peach", "Banana"));
+            MaxGeneric<int> intValue = new MaxGeneric<int>(intArray);
+            Console.WriteLine(intValue.FindMaximum());
+            MaxGeneric<float> floatValue = new MaxGeneric<float>(floatArray);
+            Console.WriteLine(floatValue.FindMaximum());
+            MaxGeneric<string> strValue = new MaxGeneric<string>(stringArray);
+            Console.WriteLine(strValue.FindMaximum());
         }
+
+
     }
 }

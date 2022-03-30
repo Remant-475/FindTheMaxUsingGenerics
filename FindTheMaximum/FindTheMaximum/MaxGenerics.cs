@@ -30,7 +30,11 @@ namespace FindTheMaximum
                 var max = array_Max(array_Value);
                 return max;
             }
-
+        public void PrintMax()
+        {
+            var maximum = array_Max(array_Value);
+            Console.WriteLine("Maximum is = " + maximum);
         }
+    }
     
 }

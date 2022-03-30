@@ -15,11 +15,11 @@ using System.Threading.Tasks;
             string[] stringArray = { "Apple", "Peach", "Banana", "Remant", "Vivek", "Aman" };
 
             MaxGeneric<int> intValue = new MaxGeneric<int>(intArray);
-            Console.WriteLine(intValue.FindMaximum());
+            intValue.PrintMax();
             MaxGeneric<float> floatValue = new MaxGeneric<float>(floatArray);
-            Console.WriteLine(floatValue.FindMaximum());
+            floatValue.PrintMax();
             MaxGeneric<string> strValue = new MaxGeneric<string>(stringArray);
-            Console.WriteLine(strValue.FindMaximum());
+            strValue.PrintMax();
         }
 
 
